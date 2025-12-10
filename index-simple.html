@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Səhifə</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arxa fonlu sayt</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Səhifə scrollbar olmasın */
+}
 
-            /* GitHub raw link ilə arxa fon */
-            background-image: url("https://raw.githubusercontent.com/anaraydinli55/viktoria/main/kataloq.webp");
-            background-size: cover;         /* Ekranı tam örtür */
-            background-position: center;    /* Şəkil mərkəzdə */
-            background-repeat: no-repeat;   /* Təkrarlanmır */
-            background-attachment: fixed;   /* Scroll zamanı sabit qalır */
-        }
-
-        h1 {
-            color: white;
-            text-align: center;
-            padding-top: 40px;
-            text-shadow: 0 0 10px black;
-        }
-    </style>
+.bg-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: -1; /* Arxa planda qalsın */
+}
+</style>
 </head>
 <body>
 
-    <h1>Viktoria – Parça Boyaları</h1>
+<!-- Arxa planda sayt -->
+<iframe src="https://viktoria-az.vercel.app/" class="bg-frame"></iframe>
+
+<h1 style="color:white; text-align:center; padding-top:40px; text-shadow:0 0 10px black;">
+    Üstündəki kontent buraya yazılacaq
+</h1>
 
 </body>
 </html>
+
 
