@@ -21,7 +21,11 @@
     .overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+      background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.3)
+      );
       z-index: 0;
     }
 
@@ -32,14 +36,21 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end; /* Sağ hizalama üçün */
-      text-align: right;     /* Mətnləri sağ hizala */
-      padding: 0 40px;
+      align-items: flex-end; /* Sağ hizalama */
+      text-align: right;     /* Mətn sağa */
+      padding: 0 50px;
     }
 
     h1 {
       font-size: 3rem;
       margin-bottom: 20px;
-      text-shadow: 0 0 15px black;
+      text-shadow: 0 0 15px rgba(0,0,0,0.9);
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
+
 
 
